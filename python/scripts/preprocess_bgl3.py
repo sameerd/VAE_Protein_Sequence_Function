@@ -43,8 +43,9 @@ single_mutations = {k:convert_mutation_list_to_df(
     count_label=k) for k in files.keys()}
 
 # Now lets merge all the dataframes together
-df = functools.reduce(lambda left, right: pd.merge(left, right, on="mutations"), 
-                      single_mutations.values())
+df = functools.reduce(lambda left, right: 
+        pd.merge(left, right, on="mutations", how="outer"),
+        single_mutations.values())
 
 # Save it as csv
 df.to_csv(output_csv)
