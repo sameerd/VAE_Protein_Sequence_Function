@@ -1,14 +1,15 @@
-# VAE-Protein-Sequence-Function
-We are looking at Variational AutoEncoders for Protein Sequence-Function data
+# Variational AutoEncoders for Protein Sequence-Function data
 
 #### Notes
 
 Special checkout instructions for the code and submodules
+
 ```shell
 # Clone this repo
 git clone https://github.com/sameerd/VAE_Protein_Sequence_Function.git
 
-# Update the submodules
+# Change to directory and update the submodules
+cd VAE_Protein_Sequence_Function
 git submodule update
 
 # Create files with single and double mutants
