@@ -5,8 +5,14 @@ We are looking at Variational AutoEncoders for Protein Sequence-Function data
 
 Special checkout instructions for the code and submodules
 ```shell
+# Clone this repo
 git clone https://github.com/sameerd/VAE_Protein_Sequence_Function.git
+
+# Update the submodules
 git submodule update
+
+# Create files with single and double mutants
+python3 python/scripts/preprocess_bgl3.py
 ```
 
 
